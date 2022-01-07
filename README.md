@@ -7,3 +7,4 @@ https://dashboard.heroku.com/new?template=https://github.com/winkxx/Bot-meta
 > 3. Rclone_share 可不填，True 为上传网盘后返回分享链接(onedrive)，False 为关闭该功能，不设置该变量则默认关闭
 > 4. Error_user_info 可不填，可设置非允许使用者发送消息时的提示，不设置该变量则使用默认语句
 > 5. 该版本为- -以前的版本，懒得更上去了
+> 6. 页面不用管(管不了)~用bot就完事了，没经过测试(可能成功？)
