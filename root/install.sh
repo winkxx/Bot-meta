@@ -30,4 +30,7 @@ echo $OS_type
 bash <(curl -sL install.emengweb.com/fclone.sh)
 mv /usr/bin/fclone /usr/bin/rclone
 chmod 777 /usr/bin/rclone
-curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
+
+#curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
+wget https://github.com/FolderMagic/FolderMagic/raw/master/FolderMagic
+chmod +x FolderMagic
