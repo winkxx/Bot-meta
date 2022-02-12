@@ -1,6 +1,9 @@
 #!/bin/bash
 #!！
 
+pip install bgmi -U
+bgmi upgrade
+bgmi config
 
 touch /root/.aria2/aria2.session
 chmod 0777 /root/.aria2/ -R
