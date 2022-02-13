@@ -40,6 +40,6 @@ bgmi source mikan_project
 bgmi config ARIA2_RPC_URL 'http://127.0.0.1:8080/rpc'
 bgmi config ARIA2_RPC_TOKEN 'token:$Aria2_secret'
 bgmi config ADMIN_TOKEN '$ADMIN_TOKEN'
-bgmi config TORNADO_SERVE_STATIC_FILES '1'
+bgmi config TORNADO_SERVE_STATIC_FILES '0'
 #wget https://github.com/FolderMagic/FolderMagic/raw/master/FolderMagic
 #chmod +x FolderMagic
