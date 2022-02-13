@@ -32,7 +32,6 @@ mv /usr/bin/fclone /usr/bin/rclone
 chmod 777 /usr/bin/rclone
 
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
-pip install bgmi
 bgmi install
 pip install bgmi -U
 bgmi upgrade
