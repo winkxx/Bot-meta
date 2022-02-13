@@ -2,7 +2,6 @@
 #!！
 
 bgmi cal --download-cover
-bgmi_http --port=8888 --address=0.0.0.0
 touch /root/.aria2/aria2.session
 chmod 0777 /root/.aria2/ -R
 #-aria "http://127.0.0.1:8080/jsonrpc"
@@ -43,3 +42,4 @@ nohup rclone rcd --rc-addr=127.0.0.1:5572 --rc-user=root --rc-pass=$Aria2_secret
 #nohup python3 /bot/web.py &
 
 python3 /bot/main.py
+bgmi_http --port=8888 --address=0.0.0.0
