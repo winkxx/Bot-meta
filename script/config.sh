@@ -1,10 +1,13 @@
 #!/bin/bash
 #Hardcode
 bgmi config SAVE_PATH $BANGUMI_PATH &> /dev/null
-bgmi source $DATA_SOURCE
 bgmi config ADMIN_TOKEN $ADMIN_TOKEN
 bgmi config ENABLE_GLOBAL_FILTER $ENABLE_GLOBAL_FILTER
 bgmi config GLOBAL_FILTER "$GLOBAL_FILTER"
+
+bgmi source mikan_project
+bgmi config ARIA2_RPC_URL 'http://127.0.0.1:8080/rpc'
+bgmi config ARIA2_RPC_TOKEN 'token:$Aria2_secret'
 
 # environment variables config
 
