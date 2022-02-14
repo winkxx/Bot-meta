@@ -68,6 +68,9 @@ RUN mkdir /front_static
 COPY front_static /front_static
 RUN chmod 0777 /front_static/ -R
 
+ADD ./script /script
+RUN chmod +x /script/*.sh
+
 
 RUN mkdir /bot
 COPY bot /bot
