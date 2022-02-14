@@ -1,7 +1,7 @@
 #!/bin/bash
 #!！
-
-bgmi cal --download-cover
+pip show bgmi
+#bgmi cal --download-cover
 touch /root/.aria2/aria2.session
 chmod 0777 /root/.aria2/ -R
 #-aria "http://127.0.0.1:8080/jsonrpc"
