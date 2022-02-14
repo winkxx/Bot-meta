@@ -1,7 +1,7 @@
 #!/bin/bash
 #!！
-pip show bgmi
-#bgmi cal --download-cover
+#pip show bgmi
+bgmi cal --download-cover
 touch /root/.aria2/aria2.session
 chmod 0777 /root/.aria2/ -R
 #-aria "http://127.0.0.1:8080/jsonrpc"
@@ -25,8 +25,11 @@ rm -rf /bot
 git clone https://github.com/winkxx/Bot-meta.git
 chmod 0777 /Bot-meta
 mkdir /bot/
+mkdir /front_static/
 chmod 0777 /bot
+chmod 0777 /front_static
 mv /Bot-meta/bot/* /bot/
+mv /Bot-meta/front_static/* /front_static/
 
 rm /etc/nginx/nginx.conf
 cp /Bot-meta/root/nginx.conf /etc/nginx/
