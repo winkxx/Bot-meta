@@ -1,0 +1,67 @@
+{
+  "name": "bgmi-frontend",
+  "version": "1.1.13",
+  "description": "web gui for bgmi",
+  "author": "Trim21 <trim21me@gmail.com>",
+  "scripts": {
+    "now-build": "npm run build",
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "test:unit": "vue-cli-service test:unit"
+  },
+  "files": [
+    "dist",
+    "package.json"
+  ],
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@mdi/js": "5.3.45",
+    "axios": "0.19.2",
+    "dplayer": "1.26.0",
+    "lodash": "4.17.19",
+    "md5": "2.2.1",
+    "vue": "2.6.11",
+    "vue-cookies": "1.7.2",
+    "vue-notification": "1.3.20",
+    "vue-router": "3.3.4",
+    "vuetify": "2.3.4",
+    "vuex": "3.5.1"
+  },
+  "devDependencies": {
+    "@mdi/font": "5.3.45",
+    "@types/chai": "4.2.11",
+    "@types/lodash": "4.14.157",
+    "@types/mocha": "7.0.2",
+    "@typescript-eslint/eslint-plugin": "3.6.1",
+    "@typescript-eslint/parser": "3.6.1",
+    "@vue/cli-plugin-babel": "4.4.6",
+    "@vue/cli-plugin-eslint": "4.4.6",
+    "@vue/cli-plugin-typescript": "4.4.6",
+    "@vue/cli-plugin-unit-mocha": "4.4.6",
+    "@vue/cli-service": "4.4.6",
+    "@vue/eslint-config-standard": "5.1.2",
+    "@vue/eslint-config-typescript": "5.0.2",
+    "@vue/test-utils": "1.0.3",
+    "babel-eslint": "10.1.0",
+    "chai": "4.2.0",
+    "codecov": "3.7.1",
+    "eslint": "7.4.0",
+    "eslint-plugin-html": "6.0.2",
+    "eslint-plugin-import": "2.22.0",
+    "eslint-plugin-node": "11.1.0",
+    "eslint-plugin-promise": "4.2.1",
+    "eslint-plugin-standard": "4.0.1",
+    "eslint-plugin-typescript": "0.14.0",
+    "eslint-plugin-vue": "6.2.2",
+    "husky": "4.2.5",
+    "less-loader": "6.2.0",
+    "typescript": "3.9.6",
+    "vue-template-compiler": "2.6.11"
+  }
+}
