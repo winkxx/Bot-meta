@@ -24,16 +24,16 @@ chmod 0777 /tracker.sh
 rm -rf /bot
 git clone https://github.com/winkxx/Bot-meta.git
 chmod 0777 /Bot-meta
-mkdir /bgmi/
+#mkdir /bgmi/
 mkdir /bot/
-mkdir /bgmi/bangumi/
-mkdir /bgmi/front_static/
-chmod 0777 /bgmi
-chmod 0777 /bgmi/bangumi
+#mkdir /bgmi/bangumi/
+#mkdir /bgmi/front_static/
+#chmod 0777 /bgmi
+#chmod 0777 /bgmi/bangumi
 chmod 0777 /bot
-chmod 0777 /bgmi/front_static
+#chmod 0777 /bgmi/front_static
 mv /Bot-meta/bot/* /bot/
-mv /Bot-meta/front_static/* /bgmi/front_static/
+#mv /Bot-meta/front_static/* /bgmi/front_static/
 
 rm /etc/nginx/nginx.conf
 cp /Bot-meta/root/nginx.conf /etc/nginx/
