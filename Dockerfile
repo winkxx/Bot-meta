@@ -64,6 +64,11 @@ RUN pip3 install lxml --upgrade
 RUN mkdir /index
 COPY /index.html /index
 
+RUN mkdir /front_static
+COPY front_static /front_static
+RUN chmod 0777 /front_static/ -R
+
+
 RUN mkdir /bot
 COPY bot /bot
 RUN chmod 0777 /bot/ -R
