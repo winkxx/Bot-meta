@@ -12,7 +12,7 @@ if [ $1 = "start" ]; then
     echo "*/30 * * * * /usr/bin/bgmi update --download" | crontab -
     crond
 
-    bgmi_http --port=80 --address=0.0.0.0
+    bgmi_http --port=8868 --address=0.0.0.0
 else
     $@
 fi
