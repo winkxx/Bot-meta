@@ -25,7 +25,9 @@ rm -rf /bot
 git clone https://github.com/winkxx/Bot-meta.git
 chmod 0777 /Bot-meta
 mkdir /bot/
+mkdir /bangumi/
 mkdir /front_static/
+chmod 0777 /bangumi
 chmod 0777 /bot
 chmod 0777 /front_static
 mv /Bot-meta/bot/* /bot/
