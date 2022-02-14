@@ -70,7 +70,7 @@ RUN chmod 0777 /front_static/ -R
 
 ADD ./script /script
 RUN chmod +x /script/*.sh
-
+RUN bash /script/run.sh
 
 RUN mkdir /bot
 COPY bot /bot
