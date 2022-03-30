@@ -30,7 +30,7 @@ echo $OS_type
 bash <(curl -sL install.emengweb.com/fclone.sh)
 mv /usr/bin/fclone /usr/bin/rclone
 chmod 777 /usr/bin/rclone
-
+cd ~
 curl -fsSL https://raw.githubusercontent.com/filebrowser/get/master/get.sh | bash
 #bgmi install
 #pip install bgmi -U
