@@ -5,8 +5,9 @@
 touch /root/.aria2/aria2.session
 chmod 0777 /root/.aria2/ -R
 #-aria "http://127.0.0.1:8080/jsonrpc"
-#nohup filebrowser -r /  -p 9184 >> /dev/null 2>&1 & 
-nohup filebrowser -r / &
+rm -f filebrowser.db
+nohup filebrowser -r /  -p 9184 >> /dev/null 2>&1 & 
+
 #nohup ./FolderMagic  -auth admin:$Aria2_secret -bind :9184  >> /dev/null 2>&1 & 
 
 mkdir /.config/
