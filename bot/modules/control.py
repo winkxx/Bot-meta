@@ -194,11 +194,12 @@ async def run_await_rclone(dir,title,info,file_num,client, message):
     Rclone_remote=os.environ.get('Remote')
     Upload=os.environ.get('Upload')
     info = await client.send_message(chat_id=message.chat.id, text="开始上传", parse_mode='markdown')
+    print("上传测试")
     name=f"{str(info.message_id)}_{str(info.chat.id)}"
     if int(file_num)==1:
-        shell=f"rclone copy \"{dir}\" \"{Rclone_remote}:{Upload}\"  -v --stats-one-line --stats=1s --log-file=\"{name}.log\" "
+        shell=f"rclone copy \"{dir}\" \"{Rclone_remote}:{Upload}\"  -p -v --stats-one-line --stats=1s --log-file=\"{name}.log\" "
     else:
-        shell=f"rclone copy \"{dir}\" \"{Rclone_remote}:{Upload}/{title}\"  -v --stats-one-line --stats=1s --log-file=\"{name}.log\" "
+        shell=f"rclone copy \"{dir}\" \"{Rclone_remote}:{Upload}/{title}\" -p -v --stats-one-line --stats=1s --log-file=\"{name}.log\" "
     print(shell)
     cmd = subprocess.Popen(shell, stdin=subprocess.PIPE, stderr=sys.stderr, close_fds=True,
                            stdout=subprocess.PIPE, universal_newlines=True, shell=True, bufsize=1)
